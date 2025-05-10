@@ -1,0 +1,332 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #24292e;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #cdd9e5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #58a6ff;
+  outline: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #58a6ff, #1f42c0);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #2381ee;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1a66cc;
+  outline: none;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222;
+  border-bottom: 2px solid #58a6ff;
+  padding-bottom: 0.2rem;
+  text-align: center;
+}
+
+.about-section p,
+.skills-section ul,
+.projects-section p,
+.contact-section form,
+.contact-section p {
+  max-width: 600px;
+  margin: auto;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: #58a6ff;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+.project-card p {
+  flex-grow: 1;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #555;
+  outline: none;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-section label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 5px #58a6ff;
+}
+
+.form-feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #2a9d8f;
+  min-height: 1.2em;
+}
+
+footer {
+  background-color: #24292e;
+  color: #cdd9e5;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background-color: #24292e;
+    height: 100vh;
+    width: 70%;
+    flex-direction: column;
+    padding-top: 2rem;
+    transition: right 0.3s ease;
+    z-index: 998;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    margin: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-list li {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .project-card {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .btn-secondary {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-section label,
+  .contact-section input,
+  .contact-section textarea {
+    font-size: 0.9rem;
+  }
+}
+

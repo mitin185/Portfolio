@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Personal Portfolio - Kirtan Mitin Sahu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Kirtan Mitin Sahu</div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Hello, I’m Kirtan Mitin Sahu</h1>
+        <p>Computer Science Student | Web Developer | Problem Solver</p>
+        <a href="#projects" class="btn-primary">View My Work</a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate 2nd-year computer science student dedicated to building creative and efficient web experiences. I love learning new technologies and solving problems.Seeking to leverage strong technical skill, project experience, and a passion for innovationin a dynamic and challenging enivornment.
+      </p>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 &amp; CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Web Design</li>
+        <li>Git &amp; Version Control</li>
+        <li>Problem Solving &amp; Algorithms</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>ADHD Detector</h3>
+          <p>An interactive platform for understanding and managing Attention Deficit Hyperactivity Disorder (ADHD).</p>
+          <a href="#" class="btn-secondary" aria-label="View ADHD Detector Project">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Expense Tracker</h3>
+          <p>A streamlined Expense Tracker for managing income, expenses, and visualizing financial insights effortlessly.</p>
+          <a href="#" class="btn-secondary" aria-label="View Expense Tracker Project">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Music search App</h3>
+          <p>A seamless app for discovering your favorite music and artists instantly.</p>
+          <a href="#" class="btn-secondary" aria-label="View Music Search app Project">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Quiz App</h3>
+          <p>An interactive app to test your knowledge across various genres and age groups.</p>
+          <a href="#" class="btn-secondary" aria-label="View Quiz App Project">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>AeroVista</h3>
+          <p>Capturing breathtaking aerial views with precision and style.</p>
+          <a href="#" class="btn-secondary" aria-label="View AeroVista Project">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Kirtan Mitin Sahu. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
